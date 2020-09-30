@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* デフォルト設定 */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+body,
+html,
+div,
+p,
+span,
+blockquote,
+a,
+header,
+footer,
+nav,
+aside,
+main,
+section,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+table,
+th,
+tr,
+td,
+form,
+input,
+button,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-family: "keifont", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d75e2;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  text-transform: none;
+  padding: 0;
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+
+
+.bg {
+  position: relative;
+  background-image: url(../img/common/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-mask {
+  opacity: 0;
+  background-image: url(../img/common/nioi_filter.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 1.5s ease;
+}
+
+.bg-bunsi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 150;
+  background-repeat: no-repeat;
+}
+
+.layer1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+
+.layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+/* #meter {
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  transition: left 1.5s ease-out;
+} */
+.menu {
+  opacity: 0;
+  max-width: 1590px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 290px;
+  transition: opacity 1.3s ease;
+}
+
+.btn {
+  border-radius: 50%;
+  width: 470px;
+  height: 470px;
+  background-size: contain;
+  transition: background-image 0.3s ease-out;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  border: 1px solid red;
+  pointer-events: none;
+}
+
+.shooter-button {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  background-image: url(../img/control/aroma-shooter.png);
+  background-size: contain;
+  top: 315px;
+  left: 397px;
+  width: 560px;
+  height: 560px;
+  transition: opacity 1s ease-out;
+}
+
+.kanki {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-image: url(../img/waku.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  padding: 3px 4.5px 4.5px;
+  margin-bottom: 10px;
+}
+
+#puropera {
+  transform-origin: 50.9% 51.2%;
+}
+
+.meter {
+  opacity: 0;
+  position: absolute;
+  right: 62px;
+  bottom: -1px;
+  background: url(../img/control/mater_Lv0.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 761px;
+  height: 380px;
+  padding:310px 220px 0;
+  transition: opacity 1s ease-out;
+  z-index: 110;
+}
+
+#needle {
+  width: 190px;
+  transform-origin: 85% 50%;
+  transform: rotate(0deg);
+  transition: transform 1.5s ease-out;
+}
+
+#button {
+  display: none;
+}
+
+
+
+/* test */
+.test-input-value {
+  /* display: none; */
+}
